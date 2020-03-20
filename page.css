@@ -1,18 +1,18 @@
 header {
     background-image:url(Images/Paperb.jpg) ;
     /* border-image-repeat: none; */
-    padding-right: 100%;
-
+    width: fit-content;
+    height: fit-content;
 }
 
-/* body {
-    background: url(Images/old-diary-page.png);
-    /* border-style: solid; */
-    /* width: 100px;
-    height: 70px;
-    border-image-repeat: none; */ 
 
-/* } */
+body {
+    background: url(Images/Paperb.jpg);
+    height: fit-content;
+    width: fit-content;
+    font: url(Fonts/articha);
+
+    }
 
 /* footer {
     /* background-image:url(Images/Paperb.jpg) ;
