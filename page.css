@@ -1,21 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat');
+html {
+box-sizing: border-box;
+max-width: 100%;
+    background-size: contain;
+    overflow: hidden;
+    scale: initial;
+    font-family: Caveat;
+}
 header {
-    background-image:url(Images/Paperb.jpg) ;
-    /* border-image-repeat: none; */
-    width: fit-content;
-    height: fit-content;
+    
+background-color: azure;
+padding-top: 5%;
+padding-bottom: 5%;
+border: 5px black;
+    
 }
 
 
 body {
-    background: url(Images/Paperb.jpg);
-    height: fit-content;
-    width: fit-content;
+    margin;
+    padding-left: 20%;
+    padding-right: 20%;
+    background: url(Images/Paperb.jpg) ;
+    background-repeat: none; 
+
     font: url(Fonts/articha);
 
     }
 
-/* footer {
-    /* background-image:url(Images/Paperb.jpg) ;
-    height: 20%; */
+    footer {
+    background-color: azure;
+    height: 20%; 
 
-/* }  */
+} 
