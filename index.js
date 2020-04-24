@@ -15,19 +15,19 @@
 //  So Javascripts main functionaly is that its functional. It is executable or allows for certain actions/ procedures to be excuted
 
 //<script>
- // {
- //   <button>Press me</button>
+// {
+//   <button>Press me</button>
 //const button = document.querySelector('button');
 
 //button.onclick = function() {
-  //   let name = prompt('What is your name?');
-  //   alert('Hello ' + name + ', nice to see you!');
-  // //}
+//   let name = prompt('What is your name?');
+//   alert('Hello ' + name + ', nice to see you!');
+// //}
 
 
-  // the random number generator game
+// the random number generator game
 //{
-  //  let randomNumber = Math.floor(Math.random() * 100) + 1;
+//  let randomNumber = Math.floor(Math.random() * 100) + 1;
 
 //  // const guesses = document.querySelector('.guesses');
 //   const lastResult = document.querySelector('.lastResult');
@@ -44,4 +44,19 @@
 
 // Theres a button that says Press me. When you click it a prompt shows up that says What is your name with a space for you to input your name.  When you submit, an alert pops up that says nice to see you. We also now use let instead of var because its a more correct way of using js.
 
+<button onclick="myFunction()">Play Theme Song</button>
+
+  <script>
+    function myFunction() {
+  var x = document.createElement("AUDIO");
+
+  if (x.canPlayType("audio/mpeg")) {
+      x.setAttribute("src", "Audio/On the Move(M).mp3");
+  } else {
+      x.setAttribute("src", "Audio/On the Move(M).ogg");
+  }
+  x.setAttribute("controls", "controls");
+  document.body.appendChild(x);
+}
+		</script>
 

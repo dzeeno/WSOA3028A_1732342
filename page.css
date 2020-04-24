@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Caveat');
+/* homepage and Universal */
+
+
 html {
 box-sizing: border-box;
 max-width: 100%;
-    background-size: contain;
+    /* background-size: contain; */
     /* overflow: hidden; */
     scale: initial;
     font-family: Caveat;
+    /* border: 2px black solid ; */
+    background-image: url(Images/Paperb.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
     
+
 }
 header {
     
@@ -15,21 +23,33 @@ header {
     
 }
 nav{
- border-bottom: 1cm;
+ border-bottom: 2px solid black;
+ border-top: 2px solid black;
+ border: 2px solid black;
  font-size: 120%;
+ max-width: 10%;
+ 
 }
 
 
 body {
     /* margin; */
+    max-width: 60%;
     display: inline;
     font-size: 120%;
-    margin: 10%;
-    padding-left: 20%;
-    padding-right: 20%;
-    background-image: url(Images/Paperb.jpg) ; 
+    /* padding-left: 20%;
+    padding-right: 20%; */
+    /* background-image: url(Images/Paperb.jpg);  */
 
     }
+article {
+    max-width: 60%;
+    font-size: 130%;
+}
+
+p{
+    font-size: 120%;
+}
 
 a {
     color: black;
@@ -46,3 +66,21 @@ footer {
     height: 30%; 
 
 } 
+
+
+/* Character About */
+/* All of this isn't working, I know we not supposed to use div's but how would I make this work? for now im styling directly onto the page */
+/* 
+.demographics{
+    float: left;
+    flex:70%;
+}
+
+.characterId{
+    float: right;
+    flex:30%;
+} 
+.features{
+    max-width: 60%;
+
+} */

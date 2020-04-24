@@ -37,22 +37,49 @@
 
         </section>
 
-        <section id="demographics">
-            <h3>Demographics and Occupation</h3>
-            <span>
-                <ul>
-                    <li> Name: Arthur</li>
-                    <li> Nick-Name: The Rat</li>
-                    <li> Age: 52</li>
-                    <li> Place of birth: Birmingham England</li>
-                    <li> current location: Witwaterstrand</li>
-                    <li> Education: Archeology, technology</li>
-                    <li> Occupation: Miner, Archeologist, innovator</li>
-                    <li>Income: Minimum wage plus what ever he "finds" </li>
-                </ul>
-            </span>
-        </section>
-        <section id="features">
+        <div id="demo+PictureContainer">
+            <section id="demographics" style="float: left; flex:30%">
+                <h3>Demographics and Occupation</h3>
+                <span>
+                    <ul>
+                        <li> Name: Arthur</li>
+                        <li> Nick-Name: The Rat</li>
+                        <li> Age: 52</li>
+                        <li> Place of birth: Birmingham England</li>
+                        <li> current location: Witwaterstrand</li>
+                        <li> Education: Archeology, technology</li>
+                        <li> Occupation: Miner, Archeologist, innovator</li>
+                        <li>Income: Minimum wage plus what ever he "finds" </li>
+                    </ul>
+                </span>
+            </section>
+
+            <picture id="characterId" style="float: right; flex: 30%;">
+                <img src="Images/Character placeHolder.jpg" onclick="myFunction()" alt="CHaracter Placeholder img"
+                    style="height:300x; width:200px;"></a>
+                <h3>Click Image to play theme song
+                </h3>
+                <script>
+                    function myFunction() {
+                        var x = document.createElement("AUDIO");
+
+                        if (x.canPlayType("audio/mpeg")) {
+                            x.setAttribute("src", "Audio/actBroLoop.mp3");
+                        } else {
+                            x.setAttribute("src", "Audio/actBroLoop.ogg");
+                        }
+                        x.setAttribute("controls", "controls");
+                        document.body.appendChild(x);
+                    }
+                </script>
+
+                <!-- <button onclick="myFunction()">Play Theme Song</button> -->
+            </picture>
+        </div>
+
+
+
+        <section id="features" style=" max-width: 60%; font-size: 120%;">
             <h3>Features</h3>
             <span id="featureTxtInfo"> Short 1.2
                 eye color blue
@@ -83,9 +110,7 @@
                 Posture:
                 Gesturing:
             </span>
-            <picture>
-                <img>
-            </picture>
+
         </section>
 
     </article>
