@@ -9,11 +9,12 @@ max-width: 100%;
 }
 header {
     
-background-color: azure;
 padding-top: 5%;
-padding-bottom: 5%;
-border: 5px black;
+border: black;
     
+}
+nav{
+ border-bottom: 1cm;
 }
 
 
