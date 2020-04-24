@@ -3,34 +3,46 @@ html {
 box-sizing: border-box;
 max-width: 100%;
     background-size: contain;
-    overflow: hidden;
+    /* overflow: hidden; */
     scale: initial;
     font-family: Caveat;
+    
 }
 header {
     
-padding-top: 5%;
-border: black;
+    font-size: 180%;
+    border:2px black;
     
 }
 nav{
  border-bottom: 1cm;
+ font-size: 120%;
 }
 
 
 body {
-    margin;
+    /* margin; */
+    display: inline;
+    font-size: 120%;
+    margin: 10%;
     padding-left: 20%;
     padding-right: 20%;
-    background: url(Images/Paperb.jpg) ;
-    background-repeat: none; 
-
-    font: url(Fonts/articha);
+    background-image: url(Images/Paperb.jpg) ; 
 
     }
 
-    footer {
-    background-color: azure;
-    height: 20%; 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a :hover{
+    color: crimson;
+    scale: 150%;
+
+}
+footer {
+    /* background-color: azure; */
+    height: 30%; 
 
 } 
