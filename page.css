@@ -34,7 +34,7 @@ nav{
 
 body {
     /* margin; */
-    max-width: 60%;
+    max-width: 100%;
     display: inline;
     font-size: 120%;
     /* padding-left: 20%;
@@ -49,6 +49,10 @@ article {
 
 p{
     font-size: 120%;
+    max-width: 60%;
+}
+li{
+    font-size: 120;
 }
 
 a {
@@ -64,9 +68,10 @@ a :hover{
 footer {
     /* background-color: azure; */
     height: 30%; 
+    max-width: 100%;
+    border: 2px solid black;
 
 } 
-
 
 /* Character About */
 /* All of this isn't working, I know we not supposed to use div's but how would I make this work? for now im styling directly onto the page */
