@@ -15,33 +15,42 @@
 //  So Javascripts main functionaly is that its functional. It is executable or allows for certain actions/ procedures to be excuted
 
 //<script>
-// {
-//   <button>Press me</button>
-//const button = document.querySelector('button');
+{
+    <button>Help</button>
+    const button = document.querySelector('button');
 
-//button.onclick = function() {
-//   let name = prompt('What is your name?');
-//   alert('Hello ' + name + ', nice to see you!');
-// //}
+    button.onclick = function () {
+        let name = prompt('Can I help you?');
+        alert('Hello ' + name + ', nice to see you!');
 
 
-// the random number generator game
-//{
-//  let randomNumber = Math.floor(Math.random() * 100) + 1;
 
-//  // const guesses = document.querySelector('.guesses');
-//   const lastResult = document.querySelector('.lastResult');
-//   const lowOrHi = document.querySelector('.lowOrHi');
+        // the random number generator game
+        //{
+        //  let randomNumber = Math.floor(Math.random() * 100) + 1;
 
-//   const guessSubmit = document.querySelector('.guessSubmit');
-//   const guessField = document.querySelector('.guessField');
+        //  // const guesses = document.querySelector('.guesses');
+        //   const lastResult = document.querySelector('.lastResult');
+        //   const lowOrHi = document.querySelector('.lowOrHi');
 
-//   let guessCount = 1;
-//   let resetButton;
-// }
+        //   const guessSubmit = document.querySelector('.guessSubmit');
+        //   const guessField = document.querySelector('.guessField');
 
-// </script>
+        //   let guessCount = 1;
+        //   let resetButton;
+        // }
 
-// Theres a button that says Press me. When you click it a prompt shows up that says What is your name with a space for you to input your name.  When you submit, an alert pops up that says nice to see you. We also now use let instead of var because its a more correct way of using js.
+        // </script>
 
+        // Theres a button that says Press me. When you click it a prompt shows up that says What is your name with a space for you to input your name.  When you submit, an alert pops up that says nice to see you. We also now use let instead of var because its a more correct way of using js.
+
+        <title id="blogs">Blog Navigation</title>
+        var blogNav = document.getElementById("blogs").innerHTML;
+        var blogNav = document.getElementById("blogs").innerHTML.nodeValue;
+
+        let blogs = ['b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7', 'b8']
+        console.log(blogs.length)
+
+        let first = blogs[0]
+        let last = blogs[blogs.lenght - 1]
 
