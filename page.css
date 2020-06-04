@@ -3,23 +3,23 @@
 
 
 html {
-box-sizing: border-box;
-max-width: 100%;
-    /* background-size: contain; */
-    /* overflow: hidden; */
-    scale: initial;
-    font-family: Caveat;
-    /* border: 2px black solid ; */
-    background-image: url(Images/Paperb.jpg); 
+    box-sizing: border-box;
+    max-width: 100%;
+    background-size: contain;
+    font-family: Caveat; 
+    border: 2px black solid ;
+    /* background-image: url(Images/Paperb.jpg); 
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover; */
+} 
 
-}
 header {
     
     font-size: 180%;
     border:2px black;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
     
 }
 nav{
@@ -27,7 +27,10 @@ nav{
  border-top: 2px solid black;
  border: 2px solid black;
  font-size: 120%;
- max-width: 10%;
+ max-width: 100%;
+ text-align: left;
+ padding-left: 30px;
+ padding-right: 30px;
  
 }
 
@@ -37,15 +40,46 @@ body {
     max-width: 100%;
     display: inline;
     font-size: 120%;
-    /* padding-left: 20%;
-    padding-right: 20%; */
-    /* background-image: url(Images/Paperb.jpg);  */
+    padding-left: 30px;
+    padding-right: 30px; 
+    margin-left: auto;
+    margin-right:auto;
 
-    }
-article {
-    max-width: 60%;
-    font-size: 130%;
 }
+#mainpageBody {
+    margin-left: auto;
+    margin-right:auto;
+    padding-left: 30px;
+    padding-right: 30px; 
+}
+
+article {
+    max-width: 100%;
+    font-size: 130%;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#AboutBrief {
+   
+    border: 1px solid #696969;
+    max-width: fit-content;
+    padding-left: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+    flex: 60%;
+    float: left;
+}
+
+#characterpic{
+    flex: 40%;
+    padding-right: 30px;
+    max-width: fit-content;
+    float: right;
+
+}
+
 
 p{
     font-size: 120%;
@@ -73,19 +107,18 @@ footer {
 
 } 
 
-/* Character About */
-/* All of this isn't working, I know we not supposed to use div's but how would I make this work? for now im styling directly onto the page */
+
 /* 
-.demographics{
+#demographics{
     float: left;
     flex:70%;
 }
 
-.characterId{
+#characterId{
     float: right;
     flex:30%;
 } 
-.features{
+#features{
     max-width: 60%;
 
 } */
