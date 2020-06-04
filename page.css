@@ -148,18 +148,13 @@ footer {
 }
  /* MAIN BLOG PAGES */
  #blogBodies{
-     float: right;
+     float: left;
+     flex: 70%;
  }
 
-/* 
-#demographics{
-    float: left;
-    flex:70%;
+
+#blogPics{
+    float: right;
+    flex:30%;
 }
 
-
-} 
-#features{
-    max-width: 60%;
-
-} */
