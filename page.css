@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Caveat');
 /* homepage and Universal */
 
+@media Mobilescreensize and (max-width: ) {
+
+320 by 480, 640 by 960, 720 by 1280
+}
+@media Tabletscreen and (max-width: ) {
+    768 by 1024
+
+}
+
 
 html {
-    box-sizing: border-box;
-    max-width: 100%;
-    background-size: contain;
     font-family: Caveat; 
-    border: 2px black solid ;
-    /* background-image: url(Images/Paperb.jpg); 
+    background-image: url(Images/Paperb.jpg); 
     background-repeat: no-repeat;
-    background-size: cover; */
-} 
+    background-size: cover; 
+    
+}  
 
 header {
     
@@ -28,22 +34,20 @@ nav{
  border: 2px solid black;
  font-size: 120%;
  max-width: 100%;
- text-align: left;
- padding-left: 30px;
- padding-right: 30px;
+ list-style: none;
+float: left;
  
 }
 
 
 body {
-    /* margin; */
-    max-width: 100%;
-    display: inline;
-    font-size: 120%;
+
+    font-size: 200%;
     padding-left: 30px;
     padding-right: 30px; 
     margin-left: auto;
     margin-right:auto;
+    
 
 }
 #mainpageBody {
@@ -68,8 +72,11 @@ article {
     padding-left: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px black;
-    flex: 60%;
-    float: left;
+ 
+}
+
+#CharacterIntro{
+    float:left;
 }
 
 #characterpic{
@@ -77,6 +84,9 @@ article {
     padding-right: 30px;
     max-width: fit-content;
     float: right;
+    height:100px ;
+    width:40px;
+
 
 }
 
@@ -106,6 +116,32 @@ footer {
     border: 2px solid black;
 
 } 
+    /* MAIN CONTENT */
+#main{
+    flex: 70%;
+   
+}
+
+  /* ASIDE CONTENT */
+
+#BullitinContainer{
+   float: right;
+   flex: 30%;
+}
+
+#BulBoardRight{
+    height:6px; 
+    width:2px;
+}
+
+   /* BLOG PAGE */
+#BlogLinks{
+
+}
+
+#bloglist{
+
+}
 
 
 /* 
@@ -114,9 +150,7 @@ footer {
     flex:70%;
 }
 
-#characterId{
-    float: right;
-    flex:30%;
+
 } 
 #features{
     max-width: 60%;
