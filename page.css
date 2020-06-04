@@ -28,15 +28,19 @@ header {
     text-align: center;
     
 }
+ /* NAVIGATION */
 nav{
- border-bottom: 2px solid black;
- border-top: 2px solid black;
+
  border: 2px solid black;
  font-size: 120%;
  max-width: 100%;
  list-style: none;
-float: left;
+ float: left;
  
+}
+#NavBarList{
+    list-style: none;
+    float: right;
 }
 
 
@@ -134,7 +138,7 @@ footer {
     width:2px;
 }
 
-   /* BLOG PAGE */
+   /* Main BLOG PAGE */
 #BlogLinks{
 
 }
@@ -142,7 +146,10 @@ footer {
 #bloglist{
 
 }
-
+ /* MAIN BLOG PAGES */
+ #blogBodies{
+     float: right;
+ }
 
 /* 
 #demographics{
