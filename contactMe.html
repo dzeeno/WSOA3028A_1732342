@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = no">
     <link rel="stylesheet" type="text/css" href="page.css">
 
     <title>Contact me</title>
@@ -12,7 +12,7 @@
 <header>
     <h1>The Rat Hole</h1>
 </header>
-<nav>
+<nav class="navBar">
     <li><a href="index.html">Home Page</a></li>
     <li><a href="blogs.html">Blogs</a></li>
     <li><a href="characterBlog.html">About Me</a></li>
@@ -40,8 +40,18 @@
         </section>
 
         <section id="QandAs">
-            your email adress email
-            Questions here,
+
+            <form id="email"></form>
+            <label for="email">Email:</label>
+            <input id="email" type="email">
+            <input type="submit" value="Send">
+            </form>
+            <br>
+            <form id="enquieries"></form>
+            <label for="QandAs">Questions</label>
+            <input id="Questions" type="text">
+            <input type="submit" value="Send">
+            </form>
 
     </article>
 
