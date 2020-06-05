@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Caveat');
 /* homepage and Universal */
 
-@media Mobilescreensize and (max-width: ) {
+@media Mobilescreensize and (max-width:480px ) {
 
-320 by 480, 640 by 960, 720 by 1280
+
+
+/* 320 by 480, 640 by 960, 720 by 1280 */
 }
-@media Tabletscreen and (max-width: ) {
-    768 by 1024
+@media Tabletscreen and (max-width:720px ) {
+   
 
 }
 
@@ -29,15 +31,41 @@ header {
     
 }
  /* NAVIGATION */
-nav{
+.navBar{
 
  border: 2px solid black;
  font-size: 120%;
  max-width: 100%;
  list-style: none;
- 
- 
+} 
+
+ /* JS CLICK REVEAL */
+ .toggle-button{
+     display: none;
+ }
+ .toggle-button-visible{
+    display: block;
 }
+.toggle-target-hidden{
+    display: none;
+}
+.toggle-target-expanded{
+   display: block;
+}
+ 
+/* RESPONSIVE DROP DOWN  */
+@media mobilescreensize and (max-width:480px){
+    .toggle-button-visible{
+        display: block;
+    }
+    .toggle-target-hidden{
+        display: none;
+    }
+    .toggle-target-expanded{
+       display: block;
+    }
+}
+
 #NavBarList{
     list-style: none;
     float: right;

@@ -11,7 +11,7 @@
 	<script type="text/javascript" src="js/turn.js"></script>
 	<!-- trying to impliment a "page turn" type effect with js -->
 	<script type="text/javascript" src="js/jquery-3.3.1.js.js"></script>
-	<!-- j query because ive been told you need this in your website -->
+	<script type="text/javascript" src="js/declarativeToggle.js"></script>
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet"> -->
 
 	<title>The Rat Hole</title>
@@ -20,7 +20,9 @@
 <header>
 	<h1>The Rat Hole</h1>
 </header>
-<nav>
+<span data-toggle-target=".navBar" class="toggle-button">Navigate</span>
+
+<nav class="navBar">
 	<li><a href="index.html">Home Page</a></li>
 	<li><a href="blogs.html">Blogs</a></li>
 	<li><a href="characterBlog.html">About Me</a></li>
@@ -64,14 +66,6 @@
 					<li>Wireframes</li>
 					<li>Website style guide</li>
 					<li>JS functionality (page turn effect)</li>
-				</ol>
-			</span>
-			<br>
-			<span>
-				<h3>Wireframe links: </h3>
-				<ol>
-					<li><a href="https://wireframe.cc/FtExFF">Original</a></li>
-					<li><a href="https://wireframe.cc/2LfdDF">Version 2.0</a></li>
 				</ol>
 			</span>
 
