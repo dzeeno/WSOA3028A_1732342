@@ -99,10 +99,8 @@ article {
     float:left;
 }
 
-#characterpic{
-    flex: 40%;
-    padding-right: 30px;
-    max-width: fit-content;
+#Characterpic{
+
     float: right;
     height:100px ;
     width:40px;
@@ -136,7 +134,7 @@ footer {
 } 
     /* MAIN CONTENT */
 #main{
-    flex: 70%;
+    flex: 40%;
    
 }
 
