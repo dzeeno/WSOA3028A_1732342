@@ -1,9 +1,9 @@
 
 const menuItems = {
-    { title: 'Home Page', link: '/The Rat Hole' };
-{ title: 'Blogs', link: '/blogs' };
+    { title: 'Home Page', link: '/' };
+{ title: 'Blogs', link: '/blog' };
 { title: 'Blogs', link: '/about' };
-{ title: 'Blogs', link: '/blogPosts' };
+{ title: 'Blogs', link: '/blog' };
 
 }
 

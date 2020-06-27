@@ -75,6 +75,7 @@ header {
 
 body {
 border: groove black 1px;
+
 }
 
 article {
@@ -85,26 +86,7 @@ article {
     margin-right:auto;
 }
 
-#AboutBrief {
-   
-    border: 1px solid #696969;
-    max-width: fit-content;
-    padding-left: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px black;
- 
-}
 
-#CharacterIntro{
-    float:left;
-}
-
-#Characterpic{
-
-    float: right;
-    height:100px ;
-    width:40px;
-}
 
 
 p{
@@ -134,7 +116,28 @@ footer {
 } 
     /* MAIN CONTENT */
 #main{
-    flex: 40%;
+    flex: 70%;
+    float: left;
+   
+}
+
+#AboutBrief {
+   
+    border: 1px solid #696969;
+    max-width: fit-content;
+    padding-left: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+ 
+}
+
+#CharacterIntro{
+    float:left;
+}
+
+#Characterpic{
+
+    float: right;   
    
 }
 
@@ -161,6 +164,8 @@ footer {
     font-size: 150%;
 
 }
+
+
  /* BLOG PAGES */
  #blogBodies{
      float: left;
