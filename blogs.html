@@ -8,6 +8,8 @@
     <meta name="color-scheme" content="dark light">
     <link rel="stylesheet" type="text/css" href="/css/page.css">
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="/js/jquery.min.1.7.js"></script>
+    <script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
 
     <title>The Blogs</title>
 </head>
@@ -24,25 +26,67 @@
 </nav>
 
 <body id="BlogContent">
-    <article id="BlogLinks">
-        <ol id="bloglist">
-            <li><a href="blogs/bushBlog.html">Week 1: Bush and Technology</a></li>
-            <li><a href="blogs/urlBlog.html">Week 2: Url's</a></li>
-            <li><a href="blogs/metaBlog.html">Week 3: Metadata</a></li>
-            <li><a href="blogs/marshallBlog.html">Week 4: Medium is the message</a></li>
-            <li><a href="blogs/clickBlog.html">Week 5: The act of clicking</a></li>
-            <li><a href="blogs/bots.html">Week 6: robots </a></li>
-            <li><a href="blogs/aira.html">Week 7: Aira </a></li>
-            <li><a href="blogs/genderNrBlog.html">Week 8: Gender and race</a></li>
-            <li><a href="blogs/hegemonyBlog.html">Week 9: Digital Hegemonies</a></li>
-            <li><a href="blogs/indusRevBlog.html">Week 10: 4IR</a></li>
-            <li><a href="blogs/SmartBlog.html">Week 11:Smart Tech</a></li>
-            <li><a href="blogs/hyperBlog.html">Week 12:Hypertext</a></li>
-            <li><a href="blogs/queryBlog.html">BonusBlog</a></li>
-            <li><a href="blogs/finalBlog.html">Examination blog: Joburg, a city on stilts</a></li>
+    <section id="flipbook-viewport">
+        <article id="BlogLinks">
+            <ol id="bloglist">
+                <li><a href="blogs/bushBlog.html">Week 1: Bush and Technology</a></li>
+                <li><a href="blogs/urlBlog.html">Week 2: Url's</a></li>
+                <li><a href="blogs/metaBlog.html">Week 3: Metadata</a></li>
+                <li><a href="blogs/marshallBlog.html">Week 4: Medium is the message</a></li>
+                <li><a href="blogs/clickBlog.html">Week 5: The act of clicking</a></li>
+                <li><a href="blogs/bots.html">Week 6: robots </a></li>
+                <li><a href="blogs/aira.html">Week 7: Aira </a></li>
+                <li><a href="blogs/genderNrBlog.html">Week 8: Gender and race</a></li>
+                <li><a href="blogs/hegemonyBlog.html">Week 9: Digital Hegemonies</a></li>
+                <li><a href="blogs/indusRevBlog.html">Week 10: 4IR</a></li>
+                <li><a href="blogs/SmartBlog.html">Week 11:Smart Tech</a></li>
+                <li><a href="blogs/hyperBlog.html">Week 12:Hypertext</a></li>
+                <li><a href="blogs/queryBlog.html">BonusBlog</a></li>
+                <li><a href="blogs/finalBlog.html">Examination blog: Joburg, a city on stilts</a></li>
+            </ol>
+        </article>
+    </section>
+    <script type="text/javascript">
 
-        </ol>
-    </article>
+        function loadApp() {
+
+            // Create the flipbook
+
+            $('.flipbook').turn({
+                // Width
+
+                width: 922,
+
+                // Height
+
+                height: 600,
+
+                // Elevation
+
+                elevation: 50,
+
+                // Enable gradients
+
+                gradients: true,
+
+                // Auto center this flipbook
+
+                autoCenter: true
+
+            });
+        }
+
+        // Load the HTML4 version if there's not CSS transform
+
+        yepnope({
+            test: Modernizr.csstransforms,
+            yep: ['../../lib/turn.js'],
+            nope: ['../../lib/turn.html4.min.js'],
+            both: ['css/basic.css'],
+            complete: loadApp
+        });
+
+    </script>
     <!-- <aside id="BullitinBoardRight">
         <image id="BulBoardRight" style="float: right;">
             <img src="Images/OnsNodig JouOok.png" alt="Ons Nodig jou image" height="800px;" width="500px;">
