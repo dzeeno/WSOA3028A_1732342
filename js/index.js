@@ -1,6 +1,6 @@
 
-const menuItems = {
-    { title: 'Home Page', link: '/index.html' };
+//const menuItems = {
+   // { title: 'Home Page', link: '/index.html' };
 // { title: 'Blogs', link: '/blog' };
 // { title: 'Site details', link: '/siye' };
 // { title: 'Blogs', link: '/blog' };
