@@ -16,6 +16,7 @@
 html {
     font-family: Caveat; 
     background-image: url(/Images/Paperb.jpg); 
+    /* background-color: black;  */
     background-repeat: no-repeat;
     background-size: cover; 
     
@@ -76,8 +77,10 @@ header {
 
 body {
 border: groove black 1px;
+font: black ;
 
 }
+
 
 article {
     max-width: 100%;
@@ -115,7 +118,27 @@ a:hover{
     float: left;
    
 }
-
+section :hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 #AboutBrief {
    
     border: 1px solid #696969;
@@ -198,4 +221,65 @@ footer {
     color: black; 
 
 } 
+
+ /* FLIP BOOK STYLING */
+
+ #flipbook-viewport{
+	overflow:hidden;
+	width:100%;
+	height:100%;
+}
+
+#flipbook-viewport .main{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:auto;
+}
+
+#flipbook-viewport .flipbook{
+	width:922px;
+	height:600px;
+	left:-461px;
+	top:-300px;
+}
+
+#flipbook-viewport .page{
+	width:461px;
+	height:600px;
+	background-color:white;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+
+#flipbook .page{
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-ms-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-o-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+#flipbook-viewport .page link{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin:0;
+}
+
+#flipbook-viewport .shadow{
+	-webkit-transition: -webkit-box-shadow 0.5s;
+	-moz-transition: -moz-box-shadow 0.5s;
+	-o-transition: -webkit-box-shadow 0.5s;
+	-ms-transition: -ms-box-shadow 0.5s;
+
+	-webkit-box-shadow:0 0 20px #ccc;
+	-moz-box-shadow:0 0 20px #ccc;
+	-o-box-shadow:0 0 20px #ccc;
+	-ms-box-shadow:0 0 20px #ccc;
+	box-shadow:0 0 20px #ccc;
+}
 

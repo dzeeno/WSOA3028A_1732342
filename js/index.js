@@ -1,27 +1,46 @@
 
 const menuItems = {
-    { title: 'Home Page', link: '/' };
-{ title: 'Blogs', link: '/blog' };
-{ title: 'Blogs', link: '/about' };
-{ title: 'Blogs', link: '/blog' };
+    { title: 'Home Page', link: '/index.html' };
+// { title: 'Blogs', link: '/blog' };
+// { title: 'Site details', link: '/siye' };
+// { title: 'Blogs', link: '/blog' };
 
-}
+// }
 
-const initializeMenu = () => {
-    const nav = document.querySelector('nav');
-    const ul = document.createElement('ul');
+// const initializeMenu = () => {
+//     const nav = document.querySelector('nav');
+//     const ul = document.createElement('ul');
 
-    for (let item of ['Home', 'Contact me', 'Blogs', 'About Me', 'Site details']) {
-        const li = document.createElement('li');
-        li.innerText = item;
+//     for (let item of ['Home', 'Contact me', 'Blogs', 'About Me', 'Site details']) {
+//         const li = document.createElement('li');
+//         li.innerText = item;
 
-        ul.appendChild(li);
-    }
+//         ul.appendChild(li);
+//     }
 
-    nav.appendChild(ul);
-};
+//     nav.appendChild(ul);
+// };
 
-document.addEventListener{ 'DOMContentLoaded', () => initializeMenu() };
+// document.addEventListener{ 'DOMContentLoaded', () => initializeMenu() };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     // <title id="blogs">Blog Navigation</title>
     // var blogNav = document.getElementById("blogs").innerHTML;
