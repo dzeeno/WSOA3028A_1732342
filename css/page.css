@@ -167,17 +167,10 @@ h2, img:hover {
 #BullitinContainer{
    float: right;
    flex: 30%;
-}
-
-#BulBoardRight{
-    height:6px; 
-    width:2px;
+   box-sizing: border-box;
 }
 
    /* Main BLOG PAGE */
-#BlogLinks{
-
-}
 
 #bloglist{
     text-align: center;
